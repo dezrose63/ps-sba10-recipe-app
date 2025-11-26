@@ -20,7 +20,7 @@ interface RandomMealResponse {
 const RANDOM_MEAL_URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
 const RandomMeal = () => {
-  // ✅ Fetch hook
+  // Fetch hook
   const { data, loading, error, refetch } =
     useFetch<RandomMealResponse>(RANDOM_MEAL_URL);
 
@@ -29,7 +29,7 @@ const RandomMeal = () => {
     [data]
   );
 
-  // ✅ Favorites context (global state)
+  // Favorites context (global state)
   const { favoriteIds, addFavorite, removeFavorite, isFavorite } =
     useFavorites();
 
