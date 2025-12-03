@@ -26,21 +26,13 @@ const Navbar = () => {
     <header className="bg-slate-900/90 border-b border-slate-800 sticky top-0 z-20">
       <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-3 justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-lg font-semibold text-emerald-400">
-            Meal Explorer
-          </span>
+          <span className="text-lg font-semibold text-emerald-400">Meal Explorer</span>
         </Link>
 
         <nav className="flex items-center gap-2">
-          <NavLink to="/" className={linkClasses} end>
-            Home
-          </NavLink>
-          <NavLink to="/favorites" className={linkClasses}>
-            Favorites ({favoriteIds.length})
-          </NavLink>
-          <NavLink to="/random" className={linkClasses}>
-            Random
-          </NavLink>
+          <NavLink to="/" className={linkClasses} end> Home </NavLink>
+          <NavLink to="/favorites" className={linkClasses}> Favorites ({favoriteIds.length})</NavLink>
+          <NavLink to="/random" className={linkClasses}> Random </NavLink>
         </nav>
 
         <form

@@ -44,9 +44,7 @@ const HomePage = () => {
               />
               <div>
                 <h2 className="text-sm font-semibold">{cat.strCategory}</h2>
-                <p className="text-xs text-slate-300 line-clamp-3">
-                  {cat.strCategoryDescription}
-                </p>
+                <p className="text-xs text-slate-300 line-clamp-3">{cat.strCategoryDescription}</p>
               </div>
             </Link>
           ))}

@@ -2,15 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { FavoritesProvider } from "./context/FavoritesContext";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter basename="/ps-sba10-recipe-app">
+    <HashRouter>
       <FavoritesProvider>
         <App />
       </FavoritesProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
