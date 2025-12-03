@@ -11,4 +11,5 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  base: "/ps-sba10-recipe-app/",
 });
