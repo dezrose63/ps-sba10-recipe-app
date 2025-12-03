@@ -5,5 +5,5 @@ import { defineConfig } from "vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/sba10-recipe-discoveryapp/", // 👈 repo name goes here
+  base: "https://github.com/dezrose63/ps-sba10-recipe-app", // 👈 repo name goes here
 });
